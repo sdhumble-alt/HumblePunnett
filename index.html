@@ -96,6 +96,22 @@ body {
   border-bottom: 1px solid var(--header-border);
 }
 
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-icon {
+  height: 34px;
+  width: 34px;
+  display: block;
+  border: 1.5px solid #ffffff;
+  border-radius: 8px;
+  padding: 1px;
+  box-sizing: border-box;
+}
+
 .header-titles {
   display: flex;
   flex-direction: column;
@@ -516,9 +532,12 @@ canvas {
 
   <!-- Standard App Header -->
   <header id="app-header">
-    <div class="header-titles">
-      <div id="app-title">A Humble Punnett Square</div>
-      <div id="app-subtitle">A Clean Punnett Square Builder for Biology Teachers &amp; Students &mdash; Built by Steven Humble</div>
+    <div class="header-left">
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231e2a3a'/%3E%3Crect x='8' y='8' width='16' height='16' fill='none' stroke='%23fff' stroke-width='2'/%3E%3Cpath d='M16 8v16M8 16h16' stroke='%2356B4E9' stroke-width='1.5' stroke-dasharray='2 2'/%3E%3Ctext x='12' y='14' font-family='Arial' font-size='7' font-weight='bold' fill='%23fff' text-anchor='middle'%3EB%3C/text%3E%3Ctext x='20' y='14' font-family='Arial' font-size='7' font-weight='bold' fill='%23fff' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='12' y='22' font-family='Arial' font-size='7' font-weight='bold' fill='%23fff' text-anchor='middle'%3Eb%3C/text%3E%3Ctext x='20' y='22' font-family='Arial' font-size='7' font-weight='bold' fill='%23fff' text-anchor='middle'%3Eb%3C/text%3E%3C/svg%3E" alt="App Icon" class="header-icon">
+      <div class="header-titles">
+        <div id="app-title">A Humble Punnett Square</div>
+        <div id="app-subtitle">A Clean Punnett Square Builder for Biology Teachers &amp; Students &mdash; Built by Steven Humble</div>
+      </div>
     </div>
     <div class="toolbar-ver">V 1.1.0 &mdash; 2026-09-16</div>
   </header>
